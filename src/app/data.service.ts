@@ -47,8 +47,8 @@ export class DataService {
     } else {
       this.http.get<Question[]>(this.answerUrl).subscribe(
         (response: any) => {
-          const answerArr = response.feed_answers.sort((val1, val2) => {
-            return new Date(val1.CREATE_TS) - new Date(val2.CREATE_TS);
+          const answerArr = response.feed_answers.sort((val1: any, val2: any) => {
+            return new Date(val1.CREATE_TS).getTime() - new Date(val2.CREATE_TS).getTime();
           });
           console.log('ans', answerArr, response.feed_answers)
           const answerArrNorm = [];
