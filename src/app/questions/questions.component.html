@@ -1,0 +1,23 @@
+<div class="col-md-6 centeralign">
+  <div class="card centeralign addmargin" *ngFor="let question of questions">
+    <div class="card-body" >
+      <div class="card-title">
+        <span class="card-title">{{question.Id}}</span>
+      </div>
+      <div class="card-text" (click)=goToDetailsPage(question.Id)>
+        <p class="card-text">{{question.Text}}</p>
+      </div>
+      <div class="card-votes">
+        <div class="card-vote-up" (click)=upVote(question.Id)>
+          <span>{{question.upvotes}}</span>
+          <span>upvotes</span>
+        </div>
+        <div class="card-vote-down" (click)=downVote(question.Id)>
+          <span>{{question.downvotes}}</span>
+          <span>downvotes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
