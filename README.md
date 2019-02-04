@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
+## Project:
+
+- to start the project run 'npm i' then 'npm start'
+- then open http://localhost:4200, you can see the all the questions listed in landing page.
+- From landing page you can upvote downvote a question or navigate to detail page
+- In detail page you can change votes, view answers and add answers 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0px;
+}
+
+.card{
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  .card-body{
+    display: flex;
+    height: 88px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .card-title{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-text{
+      flex: 8;
+      cursor: pointer;
+    }
+    .card-votes{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .card-vote-down, .card-vote-up{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        flex: 1;
+        justify-content: center;
+        width: 100%;
+        color: #FFF;
+      }
+      .card-vote-down{
+        background-color: #ea0e2b;
+      }
+      .card-vote-up{
+        background-color: #35ba28;
+      }
+    }
+  }
+}
